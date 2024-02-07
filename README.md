@@ -9,6 +9,8 @@ It started as a project for an uni asigment, and bearing in mind it might help o
 in the same situation, feel free to analyse and learn form my code as much as you want. 
 --------------------------------------------------------------------------------------------------
 
-GENERAL AND SIGNIFICANT USES SEEN IN THIS DEMO-----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+GENERAL AND SIGNIFICANT USES SEEN IN THIS DEMO
 --Added cinematics animated in NFLib, without a limit in frames
 --Touch & drag implemented
+---------------------------------------------------------------------------------------------------
