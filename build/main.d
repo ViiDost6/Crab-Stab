@@ -1,4 +1,4 @@
-main.o: C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/main.cpp \
+main.o: C:/Users/emgar/Documents/GitHub/Crab-Stab/source/main.cpp \
  C:/devkitPro/libnds/include/nds.h \
  C:/devkitPro/libnds/include/nds/libversion.h \
  C:/devkitPro/libnds/include/nds/ndstypes.h \
@@ -59,30 +59,30 @@ main.o: C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/main.cpp \
  C:/devkitPro/libnds/include/nds/arm9/video.h \
  C:/devkitPro/libnds/include/nds/arm9/videoGL.h \
  C:/devkitPro/libnds/include/nds/arm9/nand.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_lib.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_defines.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_basic.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_2d.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_tiledbg.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_affinebg.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_bitmapbg.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_mixedbg.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_sprite256.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_text.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_text16.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_colision.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_sound.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_media.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_3d.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_sprite3d.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_lib.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_defines.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_basic.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_2d.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_tiledbg.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_affinebg.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_bitmapbg.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_mixedbg.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_sprite256.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_text.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_text16.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_colision.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_sound.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_media.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_3d.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_sprite3d.h \
  C:/devkitPro/libnds/include/filesystem.h \
  C:/devkitPro/libnds/include/maxmod9.h \
  C:/devkitPro/libnds/include/mm_types.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/build/soundbank.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/build/soundbank_bin.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/GameState.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/Action.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/ForwardModel.h
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/build/soundbank.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/build/soundbank_bin.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/GameState.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/Action.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/ForwardModel.h
 C:/devkitPro/libnds/include/nds.h:
 C:/devkitPro/libnds/include/nds/libversion.h:
 C:/devkitPro/libnds/include/nds/ndstypes.h:
@@ -143,27 +143,27 @@ C:/devkitPro/libnds/include/nds/arm9/trig_lut.h:
 C:/devkitPro/libnds/include/nds/arm9/video.h:
 C:/devkitPro/libnds/include/nds/arm9/videoGL.h:
 C:/devkitPro/libnds/include/nds/arm9/nand.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_lib.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_defines.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_basic.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_2d.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_tiledbg.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_affinebg.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_bitmapbg.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_mixedbg.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_sprite256.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_text.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_text16.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_colision.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_sound.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_media.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_3d.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/nflib/include/nf_sprite3d.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_lib.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_defines.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_basic.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_2d.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_tiledbg.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_affinebg.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_bitmapbg.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_mixedbg.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_sprite256.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_text.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_text16.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_colision.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_sound.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_media.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_3d.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/nflib/include/nf_sprite3d.h:
 C:/devkitPro/libnds/include/filesystem.h:
 C:/devkitPro/libnds/include/maxmod9.h:
 C:/devkitPro/libnds/include/mm_types.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/build/soundbank.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/build/soundbank_bin.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/GameState.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/Action.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/ForwardModel.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/build/soundbank.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/build/soundbank_bin.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/source/GameState.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/source/Action.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/source/ForwardModel.h:

@@ -143,25 +143,30 @@ void CinematicManager(GameState& gs) //-----------------------------------------
     //Según nivel (cinemática), decide cúantos frames
     if (gs.lvl == 1)
     {
-        for (int i = 1; i <= 212; i++)
+        for (int i = 3; i <= 424; i++)
         {
             //Cambia la imagen a mostrar en el modo backbuffer
+            //Para editar el ritmo de animación al doble del tiempo de tardanza por bucle,
+            //Se divide entre 3 i
 
-            //Crea una cadena de formato para el nombre del archivo
-            std::string filename = "bmp/Cinem1-" + std::to_string(i);
+            if (i % 3 == 0)
+            {
+                //Crea una cadena de formato para el nombre del archivo
+                std::string filename = "bmp/Cinem1-" + std::to_string(i/3);
 
-            //Carga RAW el bitmap en RAM
-            NF_Load16bitsBg(filename.c_str(), 0);
+                //Carga RAW el bitmap en RAM
+                NF_Load16bitsBg(filename.c_str(), 0);
 
-            //Pasa la imagen al backbuffer
-            NF_Copy16bitsBuffer(0, 1, 0);
+                //Pasa la imagen al backbuffer
+                NF_Copy16bitsBuffer(0, 1, 0);
 
-            //Dibuja la imagen directamente en la pantalla seleccionada
-            //Y lo pasa a la VRAM
-            NF_Flip16bitsBackBuffer(0);
+                //Dibuja la imagen directamente en la pantalla seleccionada
+                //Y lo pasa a la VRAM
+                NF_Flip16bitsBackBuffer(0);
 
-            //Al sobreescribir el mismo slot de VRAM, sólo se ocupa un puesto,
-            //y se evitan sobrecargas
+                //Al sobreescribir el mismo slot de VRAM, sólo se ocupa un puesto,
+                //y se evitan sobrecargas
+            }
         }
         gs.lvl = 2;
     }

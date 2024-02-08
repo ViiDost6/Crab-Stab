@@ -1,8 +1,8 @@
 ForwardModel.o: \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/ForwardModel.cpp \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/ForwardModel.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/GameState.h \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/Action.h
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/ForwardModel.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/GameState.h:
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/Action.h:
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/ForwardModel.cpp \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/ForwardModel.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/GameState.h \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/Action.h
+C:/Users/emgar/Documents/GitHub/Crab-Stab/source/ForwardModel.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/source/GameState.h:
+C:/Users/emgar/Documents/GitHub/Crab-Stab/source/Action.h:

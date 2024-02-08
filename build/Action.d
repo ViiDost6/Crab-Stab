@@ -1,3 +1,3 @@
-Action.o: C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/Action.cpp \
- C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/Action.h
-C:/Users/alvar/Desktop/ConsolasEva/CrabStab/source/Action.h:
+Action.o: C:/Users/emgar/Documents/GitHub/Crab-Stab/source/Action.cpp \
+ C:/Users/emgar/Documents/GitHub/Crab-Stab/source/Action.h
+C:/Users/emgar/Documents/GitHub/Crab-Stab/source/Action.h:
