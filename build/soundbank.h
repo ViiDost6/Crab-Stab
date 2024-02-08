@@ -1,0 +1,9 @@
+#define MOD_BAD_ENDING	0
+#define SFX___40340_JYV	47
+#define MOD_CINEMATICA	1
+#define MOD_FLEXIONES	2
+#define MOD_GOOD_ENDING	3
+#define MOD_INICIO	4
+#define MSL_NSONGS	5
+#define MSL_NSAMPS	88
+#define MSL_BANKSIZE	93

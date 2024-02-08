@@ -4,7 +4,10 @@
 #include <nf_lib.h>
 #include <time.h>
 #include <filesystem.h>
+#include <maxmod9.h>
 #include <string>
+#include "soundbank.h"
+#include "soundbank_bin.h"
 //-------------------------------------------------------------------------------
 
 //Variables-----------------------------------------------------------------------
@@ -28,6 +31,23 @@ void InitBuffers() //-----------------------------------------------------------
     //Inicia el acceso rápido a la carpeta raíz definida
     nitroFSInit(NULL);
     NF_SetRootFolder("NITROFS");
+    mmInitDefaultMem( (mm_addr)soundbank_bin );
+
+    // Bloqueo de los canales de sonido
+    mmLockChannels(BIT(0) | BIT(1) | BIT(2) | BIT (4) | BIT (5) | BIT (6) | BIT (7) | BIT (8) | BIT (9) | BIT (10));
+
+    // API de sonidos de MAXMOD
+    soundEnable();
+
+    // Carga de sonidos con .mod
+    mmLoad( MOD_BAD_ENDING );
+    mmLoad( MOD_CINEMATICA );
+    mmLoad( MOD_INICIO );
+    mmLoad( MOD_GOOD_ENDING );
+    mmLoad( MOD_FLEXIONES );
+
+    // Buffer de los sonidos
+	NF_InitRawSoundBuffers();
 
     //Buffers de los fondos teselados
     NF_InitTiledBgBuffers();
@@ -69,7 +89,7 @@ void Update(GameState& gs, ForwardModel& fm) //---------------------------------
 
 	if(down & KEY_START)    {action.SetStart();}
 
-	if(held & KEY_TOUCH) 
+	if(held & KEY_TOUCH)
     {
         touchRead(&touch);
         action.SetTouch();
@@ -106,7 +126,7 @@ void Update(GameState& gs, ForwardModel& fm) //---------------------------------
     {
         NF_MoveSprite(1, 0, gs.marcelo_x, gs.marcelo_y);
     }
-    
+
     NF_SpriteOamSet(0);
     NF_SpriteOamSet(1);
 
@@ -159,7 +179,7 @@ void Drawscene(GameState& gs) //------------------------------------------------
         NF_CreateTiledBg(0, 0, "logo");
         NF_CreateTiledBg(0, 1, "titulo");
         NF_CreateTiledBg(1, 1, "menu");
-
+        mmStart(MOD_INICIO, MM_PLAY_LOOP);
     }
 
     else if (gs.lvl == 1)
@@ -169,6 +189,7 @@ void Drawscene(GameState& gs) //------------------------------------------------
 
         //se llama a la función de manejo de cinemáticas
         CinematicManager(gs);
+        mmStart(MOD_CINEMATICA, MM_PLAY_LOOP);
     }
 
     else if (gs.lvl == 2)
@@ -247,6 +268,8 @@ void Drawscene(GameState& gs) //------------------------------------------------
         //Activa el uso de matrices de rotación para los sprites de los brazos
         NF_EnableSpriteRotScale(1, 19, 0, false);
         NF_EnableSpriteRotScale(1, 20, 1, false);
+
+        mmStart(MOD_FLEXIONES, MM_PLAY_LOOP);
     }
 
     if (gs.lvl == 3)
@@ -259,6 +282,8 @@ void Drawscene(GameState& gs) //------------------------------------------------
 
             NF_CreateTiledBg(0, 0, "sup");
             NF_CreateTiledBg(1, 0, "inf");
+
+            mmStart(MOD_GOOD_ENDING, MM_PLAY_LOOP);
         }
         else
         {
@@ -267,6 +292,8 @@ void Drawscene(GameState& gs) //------------------------------------------------
 
             NF_CreateTiledBg(0, 0, "sup");
             NF_CreateTiledBg(1, 0, "inf");
+
+            mmStart(MOD_BAD_ENDING, MM_PLAY_LOOP);
         }
     }
 }
@@ -281,7 +308,7 @@ void TextMaker(GameState& gs) //------------------------------------------------
     }
 
     if (gs.lvl == 2)
-    {   
+    {
         NF_ClearTextLayer(1, 0);
         NF_CreateTextLayer(0, 0, 0, "normal");
 
@@ -312,7 +339,6 @@ void LevelClear(GameState& gs) //-----------------------------------------------
     {
         NF_Unload16bitsBg(0);
         NF_Reset16bitsBgBuffers();
-
     }
     if (gs.lvl == 3)
     {
@@ -336,17 +362,18 @@ int main(void) {
     GameState gs;
     ForwardModel fm;
     gs.Reset();
+    mmSetModuleVolume(100);
 
     uint ticks = 0;
 	int seconds = 0;
 	int next = 1;
     int frame = 0;
-    
+
 
     Drawscene(gs);
     int prev_lvl = 0;
 
-	while(1) 
+	while(1)
 	{
         ticks += timerElapsed(0);
 		seconds = (int) (ticks/TIMER_SPEED);
